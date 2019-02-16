@@ -1,0 +1,66 @@
+; -----------------------------------------------------------------------------
+[Version]
+Signature = "$Windows NT$"
+Provider = "JMF Soft"
+CESignature = "$Windows CE$"
+
+; -----------------------------------------------------------------------------
+[CEStrings]
+AppName		= STweaker 2004
+InstallDir	= %CE1%\%AppName%
+
+; -----------------------------------------------------------------------------
+[CEDevice]
+VersionMin			= 2.1
+VersionMax			= 100.0
+
+[CEDevice.SH3]						
+ProcessorType		= 10003		
+
+[CEDevice.SH4]
+ProcessorType		= 10005
+
+[CEDevice.MIPS]	
+ProcessorType		= 4000	
+
+[CEDevice.ARM]
+ProcessorType		= 2577	
+
+; -----------------------------------------------------------------------------
+
+[SourceDisksNames.SH3]		
+2 = ,"SH3 files",,SH3			
+
+[SourceDisksNames.SH4]		
+2 = ,"SH4 files",,SH4			
+
+[SourceDisksNames.MIPS]
+2 = ,"MIPS files",,MIPS		
+
+[SourceDisksNames.ARM]	
+2 = ,"ARM files",,ARM			
+
+; -----------------------------------------------------------------------------
+[SourceDisksFiles]
+%AppName%.exe			= 2		
+
+; -----------------------------------------------------------------------------
+[DestinationDirs]
+Files.InstallDir	= 0,%InstallDir%
+Shortcuts			= 0,%CE12%
+
+; -----------------------------------------------------------------------------
+[Files.InstallDir]
+%AppName%.exe,,,0x40000000
+
+; -----------------------------------------------------------------------------
+[DefaultInstall]
+CopyFiles = Files.InstallDir	
+CEShortcuts = Shortcuts
+AddReg = RegSettings
+
+; -----------------------------------------------------------------------------
+[RegSettings]
+
+[Shortcuts]
+%AppName%,0,%AppName%.exe,

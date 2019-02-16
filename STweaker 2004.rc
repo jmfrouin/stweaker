@@ -1,0 +1,580 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include "newres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\STweaker 2004.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Cmdbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_CP
+    BUTTON      ID_Hide
+    BUTTON      ID_Infos
+    BUTTON      IDC_Startup
+    SEPARATOR
+    BUTTON      ID_CleanAdd
+    BUTTON      ID_CleanRun
+    BUTTON      ID_SpeedPIE
+    BUTTON      ID_Advanced
+    BUTTON      ID_ANIMATION
+    BUTTON      IDC_SHELL
+    BUTTON      ID_POWER
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Tweaker"
+    BEGIN
+        MENUITEM "&About STweaker 2004...",     ID_APP_ABOUT
+        MENUITEM "&Help Topics",                ID_HELP
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Advanced"
+    BEGIN
+        MENUITEM "Power Status",                ID_POWER
+        MENUITEM "Shell",                       IDC_SHELL
+        MENUITEM "Startup Manager",             IDC_Startup
+        MENUITEM "System Informations",         ID_Infos
+    END
+    POPUP "&Improve"
+    BEGIN
+        MENUITEM "Advanced features for PIE",   ID_Advanced
+        MENUITEM "&Pocket Internet Explorer Speed", ID_SpeedPIE
+    END
+    POPUP "&Privacy"
+    BEGIN
+        MENUITEM "Address History",             ID_CleanAdd
+        MENUITEM "Run History",                 ID_CleanRun
+    END
+    POPUP "&Visual"
+    BEGIN
+        MENUITEM "&Change the Name",            ID_CP
+        MENUITEM "Hide CE taskbar",             ID_Hide
+        MENUITEM "Window animation",            ID_ANIMATION
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 214, 89
+STYLE WS_POPUP | WS_BORDER
+EXSTYLE 0x80000000L
+FONT 8, "System"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,186,7,20,20
+    LTEXT           "STweaker 2004",IDC_STATIC,7,7,56,8,SS_NOPREFIX
+    LTEXT           "Copyright 2004 FROUIN Jean-Michel",IDC_STATIC,49,45,118,
+                    8
+    LTEXT           "Version 1.34b",IDC_STATIC,7,17,45,8
+    PUSHBUTTON      "OK",IDOK,141,68,66,14
+    LTEXT           "Freeware Version",IDC_STATIC,94,7,62,8
+    LTEXT           "Please any comment/bug reports question : snoogie@free.fr",
+                    IDC_STATIC,7,33,195,8
+    PUSHBUTTON      "http://snoogie.free.fr",IDC_Lien,7,68,101,14,NOT 
+                    WS_TABSTOP,WS_EX_STATICEDGE
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x9L
+#else
+ FILEFLAGS 0x8L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Oceane DS\0"
+            VALUE "FileDescription", "STweaker 2004\0"
+            VALUE "FileVersion", "1, 0, 0, 0\0"
+            VALUE "InternalName", "STweaker 2004\0"
+            VALUE "LegalCopyright", "(C) 2004 FROUIN Jean-Michel \0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "STweaker 2004.EXE\0"
+            VALUE "PrivateBuild", "Beta Version\0"
+            VALUE "ProductName", "STweaker 2004\0"
+            VALUE "ProductVersion", "1, 0, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 82
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "STweaker 2004\n\nSTweaker2004\n\n\nSTweaker2004.Document\nSTweaker2004 Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_Recycle              "Change the name of Recycle Bin"
+    ID_HPC                  "Change the name of HPC"
+    ID_NAME_CONTROLPANEL    "Change the name of Control Panel"
+    ID_CP                   "Change the name of vairous components"
+    ID_Database             "Change the name of Databases"
+    IDC_SHELL               "Change the shell launched at startup"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_Rename DIALOG DISCARDABLE  0, 0, 184, 63
+STYLE DS_CENTER | WS_POPUP | WS_BORDER
+FONT 8, "System"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,140,8,37,12,0,WS_EX_STATICEDGE
+    LTEXT           "New name :",IDC_STATIC,10,9,39,8
+    EDITTEXT        IDC_Name,54,8,84,12,ES_RIGHT | ES_AUTOHSCROLL
+    CONTROL         "Control Panel",IDC_CP,"Button",BS_AUTORADIOBUTTON,7,26,
+                    59,11
+    CONTROL         "Databases",IDC_Databases,"Button",BS_AUTORADIOBUTTON,7,
+                    46,50,11
+    CONTROL         "My Handled PC",IDC_MyHPC,"Button",BS_AUTORADIOBUTTON,74,
+                    26,64,11
+    CONTROL         "Recycle Bin",IDC_Recycle,"Button",BS_AUTORADIOBUTTON,74,
+                    46,64,11
+    PUSHBUTTON      "Cancel",IDCANCEL,140,43,37,12,0,WS_EX_STATICEDGE
+END
+
+IDD_Animation DIALOG DISCARDABLE  0, 0, 143, 28
+STYLE WS_POPUP | WS_BORDER
+FONT 8, "System"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,85,7,50,14,0,WS_EX_STATICEDGE
+    CONTROL         "Window Animation",IDC_Animation,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,8,9,75,10
+END
+
+IDD_SpeedPIE DIALOG DISCARDABLE  0, 0, 186, 27
+STYLE WS_POPUP | WS_BORDER
+FONT 8, "System"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,152,7,27,14,0,WS_EX_STATICEDGE
+    CONTROL         "Speed up Pocket Internet Explorer",IDC_SpeedPIE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,9,127,10
+END
+
+IDD_Hide DIALOG DISCARDABLE  0, 0, 144, 27
+STYLE WS_POPUP | WS_BORDER
+FONT 8, "System"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,88,7,50,14,0,WS_EX_STATICEDGE
+    CONTROL         "Hide the CE taskbar",IDC_Hide,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,9,79,10
+END
+
+IDD_CleanAddress DIALOG DISCARDABLE  0, 0, 159, 39
+STYLE WS_POPUP | WS_BORDER
+FONT 8, "System"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,101,17,50,14,0,WS_EX_STATICEDGE
+    CONTROL         "Clean Address History",IDC_CleanAdd,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,19,87,10
+    CONTROL         "Don't save address history anymore",IDC_NoAdd,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,7,131,10
+END
+
+IDD_CleanRun DIALOG DISCARDABLE  0, 0, 142, 42
+STYLE WS_POPUP | WS_BORDER
+FONT 8, "System"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,85,20,50,14,0,WS_EX_STATICEDGE
+    CONTROL         "Clean Run History",IDC_CleanRun,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,22,73,10
+    CONTROL         "Don't save run history anymore",IDC_NoRun,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,7,117,10
+END
+
+IDD_Shell DIALOG DISCARDABLE  0, 0, 163, 57
+STYLE WS_POPUP | WS_BORDER
+FONT 8, "System"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,106,7,50,16,0,WS_EX_STATICEDGE
+    LTEXT           "Current shell : ",IDC_SHELL,7,10,48,8
+    LTEXT           "This features doesn't work as i have not yet write a new shell for HPC Pro",
+                    IDC_STATIC,7,29,142,21
+    EDITTEXT        IDC_Shellname,58,8,44,13,ES_AUTOHSCROLL
+END
+
+IDD_Startup DIALOG DISCARDABLE  0, 0, 197, 108
+STYLE WS_POPUP | WS_BORDER
+FONT 8, "System"
+BEGIN
+    LISTBOX         IDC_Reg,15,19,122,75,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Launch at Startup",IDC_STATIC,11,9,129,89
+    PUSHBUTTON      "Remove",IDC_Remove,147,68,43,14,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Cancel",IDCANCEL,147,87,43,14,0,WS_EX_STATICEDGE
+    ICON            IDR_MAINFRAME,IDC_STATIC,157,14,20,20
+    PUSHBUTTON      "Add",IDC_Add,147,54,43,14,0,WS_EX_STATICEDGE
+END
+
+IDD_IEAmelioration DIALOG DISCARDABLE  0, 0, 121, 56
+STYLE WS_POPUP | WS_BORDER
+FONT 8, "System"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,35,34,50,14,0,WS_EX_STATICEDGE
+    CONTROL         "Enable Java in Pocket IE",IDC_Java,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,7,94,10
+    CONTROL         "Enable VB Script in Pocket IE",IDC_VB,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,20,107,10
+END
+
+IDD_Infos DIALOG DISCARDABLE  0, 0, 284, 84
+STYLE WS_POPUP | WS_BORDER
+FONT 8, "System"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,201,60,50,14,0,WS_EX_STATICEDGE
+    RTEXT           "",IDC_MemoryLoad,88,7,59,8
+    LTEXT           "Memory Load:",IDC_STATIC,7,7,46,8
+    LTEXT           "Total Physical RAM:",IDC_STATIC,7,17,64,8
+    LTEXT           "Available Physical RAM:",IDC_STATIC,7,27,76,8
+    LTEXT           "Total RAM:",IDC_STATIC,7,47,36,8
+    LTEXT           "Total Available Ram:",IDC_STATIC,7,57,66,8
+    RTEXT           "",IDC_TotalPhys,88,17,60,8
+    RTEXT           "",IDC_AvailPhys,88,27,60,8
+    RTEXT           "",IDC_TotalVirtual,88,47,60,8
+    RTEXT           "",IDC_AvailVirtual,88,57,60,8
+    LTEXT           "Total Used RAM:",IDC_STATIC,7,67,54,8
+    LTEXT           "Used Physical RAM:",IDC_STATIC,7,37,66,8
+    RTEXT           "",IDC_UsedPhys,88,37,60,8
+    RTEXT           "",IDC_UsedVirtual,88,67,60,8
+    ICON            IDR_MAINFRAME,IDC_STATIC,256,7,21,20
+    RTEXT           "",IDC_Proc,149,7,99,8
+    RTEXT           "",IDC_BootCount,152,33,99,21
+END
+
+IDD_Power DIALOG DISCARDABLE  0, 0, 189, 71
+STYLE WS_POPUP | WS_BORDER
+FONT 8, "System"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,65,50,50,14,0,WS_EX_STATICEDGE
+    LTEXT           "AC power status :",IDC_STATIC,14,15,59,8
+    RTEXT           "",IDC_AC,120,15,60,8
+    LTEXT           "Main battery power status :",IDC_STATIC,14,25,90,8
+    RTEXT           "",IDC_BattStatus,120,25,60,8
+    LTEXT           "Backup battery power status :",IDC_STATIC,13,35,98,8
+    RTEXT           "",IDC_BackupPower,120,35,60,8
+    GROUPBOX        "Power informations",IDC_STATIC,7,5,175,41
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_Rename, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 177
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_Animation, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 136
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 21
+    END
+
+    IDD_SpeedPIE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 20
+    END
+
+    IDD_Hide, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 137
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 20
+    END
+
+    IDD_CleanAddress, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 152
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 32
+    END
+
+    IDD_CleanRun, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 135
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 35
+    END
+
+    IDD_Shell, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 156
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 50
+    END
+
+    IDD_Startup, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 190
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 101
+    END
+
+    IDD_IEAmelioration, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 114
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_Infos, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 277
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 75
+    END
+
+    IDD_Power, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 182
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""newres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\STweaker 2004.rc2""  // non-Microsoft eMbedded Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""wceres.rc""         // WCE-specific components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\STweaker 2004.rc2"  // non-Microsoft eMbedded Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "wceres.rc"         // WCE-specific components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
